@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="com.ticketmaster.api:discovery-java:0.1.1" type="repository">
+    <properties maven-id="com.ticketmaster.api:discovery-java:0.1.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/discovery-java-0.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/discovery-model-java-0.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-annotations-2.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/joda-time-2.9.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okhttp-3.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okio-1.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-2.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-datatype-joda-2.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lombok-1.16.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
