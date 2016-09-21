@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * Created by jamiegordonlipkin on 9/11/16.
  */
 
-@JsonIgnoreProperties({"localTime","dateTime","dateTBD","dateTBA","timeTBA","noSpecificTime"})
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class StartDate {
 
     String date;

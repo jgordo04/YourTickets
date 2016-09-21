@@ -10,10 +10,9 @@ import java.util.List;
  * Created by jamiegordonlipkin on 9/11/16.
  */
 
-@JsonIgnoreProperties({"type","id","test","locale","postalCode","city","state","country","address","_links"})
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Venues {
 
-    //Zero venueZero = new Zero();
     String name;
 
     //@JsonIgnoreProperties({"type","id","test","url","locale","images"})
@@ -26,21 +25,7 @@ public class Venues {
         this.name = name;
     }
 
-    /*(Zero venueZero ){
-        this.venueZero = venueZero;
-    }
-
-    @JsonProperty("0")
-    public Zero getZero(){
-        return venueZero;
-    }
-
-    @JsonProperty("0")
-    public void setVenue(Zero venueZero){
-        this.venueZero = venueZero;
-    }   */
-
-    @JsonProperty("name")
+   @JsonProperty("name")
     public String getName(){
         return name;
     }

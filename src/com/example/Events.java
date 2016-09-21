@@ -7,12 +7,12 @@ import java.util.*;
 /**
  * Created by jamiegordonlipkin on 9/11/16.
  */
-@JsonIgnoreProperties({"type","id","test","url","locale","images","sales","classifications","_links","_embedded"})
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Events {
 
     String name;
     Dates date = new Dates();
-    SecondEmbedded secEmb = new SecondEmbedded();
+    Embedded event = new Embedded();
 
     //@JsonIgnoreProperties({"type","id","test","url","locale","images","sales","classifications","_links"})
 
@@ -45,13 +45,13 @@ public class Events {
     }
 
     @JsonProperty("_embedded")
-    public SecondEmbedded getSecondEmbedded(){
-        return secEmb;
+    public Embedded getEmbedded(){
+        return event;
     }
 
     @JsonProperty("_embedded")
-    public void setSecondEmbedded( SecondEmbedded secEmb ){
-        this.secEmb = secEmb;
+    public void setEmbedded( Embedded event){
+        this.event = event;
     }
 
 

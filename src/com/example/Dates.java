@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by jamiegordonlipkin on 9/11/16.
  */
-@JsonIgnoreProperties({"status","timezone"})
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Dates {
 
     StartDate date;
